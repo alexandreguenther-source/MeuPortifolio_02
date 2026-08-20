@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fala comigo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html"></a>
+            <a href="hobbies.html"></a>
+        </nav>
+    </header>
+    <main>
+        <form action="#" method="post">
+            <section>
+                <!--seção de identificação-->
+                <h2>Identificação do visitante</h2>
+                <label for="name">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required autofocus><br>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu email" required autofocus><br>
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone"
+                    pattern="\(\d{2}\)\s\d{5}-\d{4}" title="Formato esperado: (xx) xxxxx-xxxx">
+            </section>
+
+            <!--Seção de preferencias-->
+            <section>
+                <h2>Preferencias e escolhas</h2>
+                <label for="hobbie">Hobbie Favorito:</label>
+                <select id="hobbie" name="hobbie">
+                    <option value="esporte">Esporte</option>
+                    <option value="musicae">Musica</option>
+                    <option value="leitura">Leitura</option>
+                </select>
+
+                <label for="satisfacao">Satisfação com o site:</label>
+                <input type="range" id="satisfacao" name="satisfacao" min="0" max="10">
+
+                <p>Perfil visitante:</p>
+                <input type="radio" id="recrutador" name="perfil" value="Recrutado">
+                <label for="recrutador">Sou Recrutador</label>
+                <input type="radio" id="estudante" name="perfil" value="Estudante">
+                <label for="recrutador">Sou Estudadnte</label>
+
+                <p>Interessados</p>
+                <input type="checkbox" id="html" name="interesses" value="HTML">
+                <label for="html">HTML</label>
+                <input type="checkbox" id="css" name="interesses" value="CSS" >
+                <label for="css">CSS</label>
+                <input type="checkbox" id="js" name="interesses" value="JavaScript">
+                <label for="js">JavaScript</label>
+            </section>
+
+            <!--Seção de dados específicos-->
+            <section>
+                <h2>Dados Específicos</h2>
+                <label for="nascimento">Data de Nascimento</label>
+                <input type="date" id="nascimento" name="nascimento">
+
+                <label for="conclusao">Conclusão do curso</label>
+                <input type="month" id="conclusao" name="conclusao">
+
+                <label for="cor">Sugira uma cor de fundo</label>
+                <input type="color" id="cor" name="cor">
+
+                <label for="experiencia">Anos de experiência</label>
+                <input type="number" id="experiencia" name="experiencia" min="0">
+            </section>
+
+            <section>
+                <!--Seção de mensagem e música-->
+                <h2>Mensagem e música</h2>
+                <label for="mensagem">Comentários</label>
+                <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem..."></textarea>
+
+                <h3>Vídeo de apresentação</h3>
+                <video controls width="300px">
+                    <source src="videos/01.mp4" type="">
+                </video>
+
+                <h3>Áldio favorito</h3>
+                <audio controls>
+                    <source src="musica/01.mp3" type="">
+                </audio>
+            </section>
+            <section>
+                <!--Seção de envios-->
+                <button type="submit">Enviar</button>
+            </section>
+
+            </section>
+
+            </section>
+
+
+
+
+        </form>
+    </main>
+
+</body>
+
+</html>
