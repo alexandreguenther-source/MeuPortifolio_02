@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Portifolio</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -24,8 +25,20 @@
             <img src="imagem/img.jpeg" alt="Imagem de perfil" width="100px">
             <p>Sou estudante e entusiasta da tecnologia, apaixonado por desenvolvimento de software
                 e sempre em busca de novos conhecimentos para crescer na área de TI.</p>
-        </div>
-        <h1>Meus Cursos</h1>
+        </div><!--perfil-->
+
+        <section id="escola">
+            <h2>Escola que estudei.</h2>
+            <ul>
+                <li>Colégio Estadula Adolpho Konder</li>
+                <p>Colégio estadual onde fiz o primário e fundamental</p>
+                <li>Cip</li>
+                <p>Curso Integrado Polivalente - Extenção extra curricular que atendia as matérias de Agricola,
+                    Industrial e Lingua Inglêsa.</p>
+            </ul>
+
+        </section><!--Escola que estudei-->
+
         <section id="concluidos">
             <h2>Cursos Concluidos</h2>
             <ul>
@@ -36,7 +49,7 @@
                 <li>Viver de E-commerce</li>
                 <li>Investidor de Verdade</li>
             </ul>
-        </section>
+        </section><!--concluidos-->
 
         <section id="andamento">
             <h2>Cursos em Andamento</h2>
@@ -46,7 +59,129 @@
                 <li>Carreira Tech - Trilha Desenvolvimento de Software</li>
                 <li>Pacote Full Stack - Danki Code</li>
             </ul>
+        </section><!--andamento-->
+        <section id="sobremim">
+            <h2>Sobre mim</h2>
+            <p id="sobreP">Sou estudante e entusiasta da tecnologia, apaixonado por desenvolvimento de software.</p>
+            <p class="destaque">Tenho grande interesse em inteligência artificial e busco aplicar esse conhecimento em
+                projetos práticos.</p>
+            <p>Também gosto de explorar novas ferramentas e linguagens de programação.</p>
         </section>
+        <section id="paixoes">
+            <h2>Minhas paixões</h2>
+            <p>Estar junto a minha familia.</p>
+            <p>Participar das competições de voo livre</p>
+            <p>Viajar</p>
+        </section>
+        <section id="sonhos">
+            <h2>Meus sonhos</h2>
+            <ul>
+                <li>Viajar pelo mundo</li>
+                <li>Aprender novos idiomas</li>
+                <li>Publicar um livro</li>
+                <li>Trabalhar na Área de desenvolvimento de software</li>
+            </ul>
+        </section>
+        <section id="metas">
+  <h2>Metas futuras</h2>
+  <label>
+    <input type="checkbox"> Viajar para o exterior
+  </label><br>
+  <label>
+    <input type="checkbox"> Aprender um novo idioma
+  </label><br>
+  <label>
+    <input type="checkbox"> Publicar um livro
+  </label><br>
+  <label>
+    <input type="checkbox"> Trabalhar como desenvolvedor de sistemas
+  </label>
+</section>
+<section id="contato">
+  <h2>Formulário de contato</h2>
+  <form>
+    <label for="cidade">Cidade:</label>
+    <select id="cidade" name="cidade">
+      <option value="blumenau" selected>Blumenau</option>
+      <option value="florianopolis">Florianópolis</option>
+      <option value="joinville">Joinville</option>
+    </select>
+  </form>
+</section>
+        <section id="social">
+            <h2>Redes Sociais</h2>
+            <a href="https://www.facebook.com/alexandrefabricio.guenther" target="_blank">
+                <img src="imagem/img.jpeg" width="50px" alt="Meu perfil no Facebook">
+            </a>
+            </a>
+
+        </section>
+        <section id="contato">
+            <h2>Contato</h2>
+            <button id="btn-contato"></button>
+        </section>
+
+        <section id="trabalhos">
+            <h2>Trabalhos</h2>
+            <ul>
+                <li>Office boy - Primeira experiência de trabalho na ACIMPEVI</li>
+                <li>Office boy - Metalurgica Zimmermann</li>
+                <li>Proprietário administrador - Panificadora e Confeitaria Suss Haus</li>
+            </ul>
+
+        </section>
+        <section id="musicas">
+            <h2>Músicas favoritas</h2>
+            <h3>Rock Clássico</h3>
+            <p>Bohemian Rhapsody – Queen</p>
+            <p>Stairway to Heaven – Led Zeppelin</p>
+            <p>Hotel California – Eagles</p>
+
+            <h3>Hard Rock</h3>
+            <p>Like a Stone – Audioslave</p>
+            <p>Show Me How to Live – Audioslave</p>
+            <p>Be Yourself – Audioslave</p>
+        </section>
+        <section id="conquistas">
+            <h2>Minhas conquistas</h2>
+            <ul>
+                <li>Formação e técnico de Hardware.</li>
+                <li>Décimo lugar em um campenato Brasileiro de parapente.</li>
+                <li>Conclusão do curso de Adiministração de Empresa.</li>
+                Reconhecimento acadêmico
+                <ul>
+                    <li>Melhor projeto de programação</li>
+                    <li>Participação em palestras de Inteligência Artificial</li>
+                </ul>
+            </ul>
+
+        </section>
+
+        <section id="familia">
+            <h2>Família</h2>
+            <p>Minha família é meu <span class="alicerce">alicerce.</span> Creci em um ambiente acolhedor e cheio de
+                amor.</p>
+            <p>Meus <span class="tios">tios</span> estiveram mais presentes na minha infância.</p>
+            <p>Meus<span class="avos"> avós brincaram muito comigo na infância.</span></p>
+            <ul>
+                <li>Pais - Sempre presentes e incentivadores.</li>
+                <li>Esposa - Sempre presente nas horas que mais precisei.</li>
+                <li>Filhos - A Rasão da minha vida.</li>
+                <li>Neto - Uma nova fase na minha vida.</li>
+            </ul>
+
+        </section><!--familia-->
+
+        <section id="viagens">
+            <h2>Viagens</h2>
+            <p>Viajar é uma experiência que mais valorizo. Cada destino me trouxe novas culturas e conhecimentos.</p>
+            <ul>
+                <li>Rio de janeiro - Cidade maravilhosa onde passei alguns dias com minha esposa.</li>
+                <li>Natal RN - Onde tive o prazer de visitar com minha mulher e meus filhos.</li>
+                <li>Governador Valadares MG - Havai do voo livre. Melhor colacação em campeonatos e maior distâcia
+                    voada.</li>
+            </ul>
+        </section><!--viagens-->
     </main>
     <footer>
         <p>&copy; 2026 Alexandre Fabricio Guenther - Todos os direitos reservados.</p>

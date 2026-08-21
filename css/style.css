@@ -1,0 +1,93 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.equipamento{
+    font-weight: bold;
+    color: blueviolet;
+}
+.equipamentoFavorito{
+    font-weight: bold;
+    color: blue;
+}
+.competicao{
+    font-style: italic;
+    font-weight: bold;
+    color: rgb(9, 110, 24);
+    font-size: 20px;
+}
+h2{
+    color: rgb(48, 48, 51);
+}
+h1{
+    color: rgb(48, 48, 51);;
+}
+#sobremim p.destaque {
+  color: darkblue;
+  font-weight: bold;
+  background-color: #f0f0f0;
+  padding: 5px;
+  border-left: 3px solid darkblue;
+}
+#escola h2, #trabalhos h2{
+  color: rgb(233, 66, 133);
+  font-size: 24px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  #familia p span{
+    color: rgb(205, 25, 25);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+  }
+  #conquistas > ul > li {
+  color: darkred;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+#sobreP{
+    color: rgb(219, 143, 11);
+}
+#musicas h3 ~ p {
+  color: darkblue;
+  font-style: italic;
+  margin-left: 20px;
+}
+img[alt] {
+  border: 3px solid darkblue;
+  border-radius: 8px;
+  padding: 4px;
+  margin: 6px;
+}
+#btn-contato {
+  background-color: darkgreen;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#btn-contato:active {
+  background-color: darkred; /* muda a cor ao clicar */
+}
+#paixoes h2::after {
+  content: " →";
+  color: darkred;
+  font-weight: bold;
+  margin-left: 8px;
+}
+#sonhos ul li::before {
+  content: "🌟 "; /* emoji estrela antes de cada item */
+  color: goldenrod;
+  font-size: 1.2em;
+}
+#metas input[type="checkbox"]:checked + span,
+#metas input[type="checkbox"]:checked {
+  accent-color: darkgreen; /* muda a cor da caixinha */
+}
+#cidade option:default {
+  background-color: lightblue;
+  font-weight: bold;
+}
+  
+  
+  
