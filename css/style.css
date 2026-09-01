@@ -1,17 +1,63 @@
-*{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+/* ===========================
+   RESET E CONFIGURAÇÕES GLOBAIS
+   =========================== */
+* {
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-body{
+
+body {
+  font-family: 'Montserrat', sans-serif;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: #f0f0f0; /* cinza claro */
+  background-color: #f0f0f0;
   margin: 0;
-  font-family: Arial, sans-serif;
-  
-  
 }
-header{
+
+/* Títulos globais */
+h1, h2, h3 {
+  font-family: 'Roboto', sans-serif;
+  color: #006064;
+  margin-bottom: 1rem;
+}
+
+/* Links globais */
+a {
+  color: #ffcc00;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: #006064;
+}
+
+/* ===========================
+   LAYOUT BASE
+   =========================== */
+main {
+  flex: 1;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+footer {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #222;
+  color: #fff;
+  padding: 1rem;
+}
+
+/* ===========================
+   HEADER E NAVEGAÇÃO
+   =========================== */
+header {
   position: fixed;
   top: 0;
   width: 100%;
@@ -23,260 +69,131 @@ header{
   padding: 1rem;
   z-index: 1000;
 }
-header {
-  background-color: #004080; /* azul escuro */
-  color: #fff;
-}
-header, footer {
-  background-color: #333333; /* cor primária */
-}
-nav{
+nav {
   display: flex;
   gap: 2rem;
 }
-nav a{
+nav a {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
 }
-main{
-  flex: 1;
-  margin-top: 80px;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
 
-
-}
-footer {
-  margin-top: auto;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: #222;
-  color: #fff;
-  padding: 1rem;
-}
-.equipamento{
-    font-weight: bold;
-    color: blueviolet;
-}
-.equipamentoFavorito{
-    font-weight: bold;
-    color: blue;
-}
-.competicao{
-    font-style: italic;
-    font-weight: bold;
-    color: rgb(9, 110, 24);
-    font-size: 20px;
-}
-h2{
-    color: rgb(48, 48, 51);
-}
-h1{
-    color: rgb(48, 48, 51);;
+/* ===========================
+   SEÇÃO: SOBRE MIM
+   =========================== */
+#sobremim p {
+  color: #333;
+  line-height: 1.6;
 }
 #sobremim p.destaque {
-  color: darkblue;
+  color: #444;
   font-weight: bold;
-  background-color: #f0f0f0;
-  padding: 5px;
-  border-left: 3px solid darkblue;
-}
-#escola h2, #trabalhos h2{
-  color: rgb(48, 48, 51);
-  font-size: 24px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  }
-  #escola .caixa:hover {
-  background-color: #e0f7fa; /* tonalidade do UniSenai */
-  transform: scale(1.02);   /* leve aumento para destacar */
-  transition: all 0.3s ease; /* suaviza a transição */
-}
-  #familia p span{
-    color: rgb(205, 25, 25);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    
-  }
-  #conquistas > ul > li {
-  color: darkred;
-  font-weight: bold;
-  margin-bottom: 8px;
-}
-#sobreP{
-    color: rgb(219, 143, 11);
-}
-#musicas h3 ~ p {
-  color: darkblue;
-  font-style: italic;
-  margin-left: 20px;
-}
-img[alt] {
-  border: 3px solid darkblue;
-  border-radius: 8px;
-  padding: 4px;
-  margin: 6px;
-}
-#btn-contato {
-  background-color: darkgreen;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
+  background-color: #f9f9f9;
+  padding: 6px;
+  border-left: 3px solid #ccc;
 }
 
-#btn-contato:active {
-  background-color: darkred; /* muda a cor ao clicar */
-}
-#paixoes h2::after {
-  content: " →";
-  color: darkred;
-  font-weight: bold;
-  margin-left: 8px;
-}
-#sonhos ul li::before {
-  content: "🌟 "; /* emoji estrela antes de cada item */
-  color: goldenrod;
-  font-size: 1.2em;
-}
-#metas input[type="checkbox"]:checked + span,
-#metas input[type="checkbox"]:checked {
-  accent-color: darkgreen; /* muda a cor da caixinha */
-}
-#cidade option:default {
-  background-color: lightblue;
-  font-weight: bold;
-}
-#hobbies ul{
+/* ===========================
+   SEÇÃO: HOBBIES
+   =========================== */
+#hobbies ul {
   display: flex;
   justify-content: center;
   gap: 2rem;
   list-style: none;
   padding: 0;
 }
-#hobbies li{
+#hobbies li {
   background-color: #eee;
   padding: 1rem;
   border-radius: 8px;
-}
-#viagens{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-}
-#viagens .card{
-  flex: 1 1 250px;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-#viagens .card button {
-  background-color: #ffd700; /* cor de destaque */
-}
-#escola{
-  display: flex;
-  gap: 1rem;
-  align-items: stretch;
-}
-#escola .caixa{
-  flex: 1;
-  background-color: #fafafa;
-  padding: 1rem;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  transition: all 0.3s;
-}
-#escola .atual{
-  flex: 2;
-  
-
-}
-#concluidos ul {
-  display: flex;            /* ativa flexbox */
-  flex-wrap: wrap;          /* permite quebrar linha */
-  gap: 1rem;                /* espaçamento entre itens */
-  justify-content: center;  /* centraliza os cursos */
-  list-style: none;         /* remove bolinhas da lista */
-  padding: 0;
-}
-
-#concluidos li {
-  flex: 1 1 200px;          /* cresce, encolhe, largura mínima */
-  background-color: #e6e6e6;
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  padding: 1rem;
   text-align: center;
-  font-weight: bold;
+  flex: 0 1 200px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
-#concluidos li:hover {
-  background-color: #d9d9d9; /* efeito hover mais escuro */
-}
-#sobremim p {
-  color: #333;          /* cinza escuro padrão */
-  font-weight: normal;  /* texto normal */
-  background: none;     /* remove fundo */
-  padding: 0;           /* remove espaçamento extra */
-  border: none;         /* remove borda lateral */
-  line-height: 1.6;     /* melhora a leitura */
-}
-#sobremim p.destaque {
-  color: #444;          /* leve destaque */
-  font-weight: bold;
-  background-color: #f9f9f9; /* cinza bem suave */
-  padding: 6px;
-  border-left: 3px solid #ccc; /* discreto destaque lateral */
-}
+
+/* ===========================
+   SEÇÃO: VIAGENS
+   =========================== */
 #viagens {
   display: flex;
-  flex-wrap: wrap;       /* quebra em telas menores */
-  gap: 2rem;             /* espaçamento entre cartões */
-  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 2rem;
+  justify-content: flex-start;
+  overflow-x: auto;
 }
-
 #viagens .card {
-  flex: 1 1 250px;       /* largura mínima de 250px */
+  flex: 0 0 250px;
   background-color: #f9f9f9;
   border: 1px solid #ccc;
   border-radius: 8px;
   padding: 1rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* mesma altura */
+  justify-content: space-between;
   text-align: center;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
-
 #viagens .card img {
   width: 100%;
   height: 150px;
-  object-fit: cover;     /* mantém proporção sem deformar */
+  object-fit: cover;
   border-radius: 6px;
 }
-
 #viagens .card button {
   margin-top: 1rem;
   padding: 0.5rem 1rem;
   border: none;
   background-color: #004080;
   color: #fff;
-  border-radius: 4px;
+  border-radius: 6px;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
+#viagens .card button:hover {
+  background-color: #e0f7fa;
+  color: #004080;
+  transform: scale(1.05);
+}
+#viagens .card button:active {
+  background-color: black;
+  color: white;
+}
+
+/* ===========================
+   SEÇÃO: ESCOLAS
+   =========================== */
+#escola {
+  display: flex;
+  gap: 1rem;
+  align-items: stretch;
+}
+#escola .caixa {
+  flex: 1;
+  background-color: #fafafa;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+#escola .atual {
+  flex: 2;
+}
+#escola .caixa:hover {
+  background-color: #e0f7fa;
+  transform: scale(1.02);
+  transition: all 0.3s ease;
+}
+
+/* ===========================
+   SEÇÃO: FAMÍLIA
+   =========================== */
 #familia {
   display: flex;
-  flex-direction: column; /* padrão: mobile */
+  flex-direction: column;
   gap: 1rem;
   align-items: center;
 }
-
 #familia .membro {
   flex: 1;
   background-color: #f9f9f9;
@@ -284,139 +201,129 @@ img[alt] {
   border-radius: 8px;
   padding: 1rem;
   text-align: center;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
-
 #familia .membro img {
   width: 120px;
   height: 120px;
-  object-fit: cover; /* mantém proporção sem deformar */
-  border-radius: 50%; /* foto circular */
+  object-fit: cover;
+  border-radius: 50%;
   margin-bottom: 0.5rem;
 }
-
-/* Layout para desktop */
 @media (min-width: 768px) {
   #familia {
-    flex-direction: row; /* lado a lado */
+    flex-direction: row;
     justify-content: center;
   }
 }
+
+/* ===========================
+   SEÇÃO: CONQUISTAS
+   =========================== */
 #conquistas {
   display: flex;
-  flex-wrap: wrap;          
-  justify-content: space-between; 
-  gap: 2rem;                
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
 }
-
 #conquistas .card {
-  flex: 1 1 250px;          
+  flex: 1 1 250px;
   background-color: #f9f9f9;
   border: 1px solid #ccc;
   border-radius: 8px;
   padding: 1rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; 
+  justify-content: space-between;
   text-align: center;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
-
 #conquistas .card img {
   width: 100%;
   height: 150px;
-  object-fit: cover;        
+  object-fit: cover;
   border-radius: 6px;
   margin-bottom: 1rem;
 }
 #conquistas .card:hover {
-  background-color: #e0f7fa; /* tonalidade UniSenai */
-  transform: scale(1.02);   /* leve zoom */
-}
-button, #btn-contato {
-  background-color: #004080; /* cor primária */
-  color: black;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: all 0.3s ease; /* suaviza efeitos */
+  background-color: #e0f7fa;
+  transform: scale(1.02);
 }
 
-button:hover, #btn-contato:hover {
-  background-color: #e0f7fa; /* tonalidade UniSenai */
-  color: #004080;            /* texto em azul escuro */
-  transform: scale(1.05);    /* leve zoom */
-}
-#btn-contato:active {
-  background-color: black;   /* ao clicar fica preto */
-  color: white;              /* texto branco para contraste */
-}
-#viagens .card button {
-  background-color: #004080; /* cor primária */
-  color: #fff;
-  padding: 0.5rem 1rem;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: all 0.3s ease; /* suaviza efeitos */
-}
-
-#viagens .card button:hover {
-  background-color: #e0f7fa; /* tonalidade UniSenai */
-  color: #004080;            /* texto azul escuro */
-  transform: scale(1.05);    /* leve zoom */
-}
-
-#viagens .card button:active {
-  background-color: black;   /* ao clicar fica preto */
-  color: white;              /* texto branco para contraste */
+/* ===========================
+   SEÇÃO: TRABALHOS
+   =========================== */
+#trabalhos ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  justify-content: center;
 }
 #trabalhos li {
+  flex: 1 1 250px;
   background-color: #fafafa;
   border: 1px solid #ddd;
   border-radius: 6px;
-  padding: 0.8rem;
-  margin-bottom: 0.5rem;
+  padding: 1rem;
+  text-align: center;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
 }
 #trabalhos li:hover {
-  background-color: #e0f7fa; /* tonalidade UniSenai */
-  transform: scale(1.02);   /* leve zoom */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.15); /* sombra mais forte */
+  background-color: #e0f7fa;
+  transform: scale(1.02);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
 }
-#musicas h3 {
-  color: #004080;
-  margin-top: 1rem;
-  border-bottom: 2px solid #004080;
-  padding-bottom: 0.3rem;
+#trabalhos h3 {
+  color: #006064;
+  margin-bottom: 0.5rem;
 }
-#galeria {
-  margin-top: 2rem;
+
+/* ===========================
+   SEÇÃO: PRATELEIRA
+   =========================== */
+#prateleira {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+}
+#prateleira .item {
+  flex: 0 0 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 8px;
   padding: 1rem;
-}
-
-#galeria h2 {
   text-align: center;
-  margin-bottom: 1rem;
-  color: #004080;
-}
-
-#galeria {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); 
-  gap: 1rem; /* espaçamento entre caixas */
-}
-
-#galeria img {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;   /* mantém proporção sem deformar */
-  border-radius: 8px;  /* bordas arredondadas */
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   transition: transform 0.3s ease;
 }
+#prateleira .item:hover {
+  transform: scale(1.05);
+}
+#prateleira img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+#prateleira .status {
+  margin-top: 0.5rem;
+  background-color: #006064;
+  color: #fff;
+  padding: 0.3rem 0.8rem;
+  border-radius: 12px;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
 
-#galeria img:hover {
-  transform: scale(1.05); /* leve zoom ao passar o mouse */
+/* ===========================
+   SEÇÃO: SOFT SKILLS
+   =========================== */
+#softskills {
+  margin-top: 2rem;
+}
+#softskills .skills {
+  display: flex;
 }
