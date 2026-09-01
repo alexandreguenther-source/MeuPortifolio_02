@@ -29,15 +29,23 @@
 
         <section id="escola">
             <h2>Escola que estudei.</h2>
-            <ul>
-                <li>Colégio Estadula Adolpho Konder</li>
-                <p>Colégio estadual onde fiz o primário e fundamental</p>
-                <li>Cip</li>
-                <p>Curso Integrado Polivalente - Extenção extra curricular que atendia as matérias de Agricola,
-                    Industrial e Lingua Inglêsa.</p>
-            </ul>
 
-        </section><!--Escola que estudei-->
+            <div class="caixa">
+                <h3>Colégio Estadual Adolpho Konder</h3>
+                <p>Colégio estadual onde fiz o primário e fundamental.</p>
+            </div>
+
+            <div class="caixa">
+                <h3>CIP</h3>
+                <p>Curso Integrado Polivalente - extensão extra curricular que atendia as matérias de Agrícola,
+                    Industrial e Língua Inglesa.</p>
+            </div>
+
+            <div class="caixa atual">
+                <h3>ADS UniSenai</h3>
+                <p>Curso atual de Análise e Desenvolvimento de Sistemas.</p>
+            </div>
+        </section>
 
         <section id="concluidos">
             <h2>Cursos Concluidos</h2>
@@ -83,31 +91,31 @@
             </ul>
         </section>
         <section id="metas">
-  <h2>Metas futuras</h2>
-  <label>
-    <input type="checkbox"> Viajar para o exterior
-  </label><br>
-  <label>
-    <input type="checkbox"> Aprender um novo idioma
-  </label><br>
-  <label>
-    <input type="checkbox"> Publicar um livro
-  </label><br>
-  <label>
-    <input type="checkbox"> Trabalhar como desenvolvedor de sistemas
-  </label>
-</section>
-<section id="contato">
-  <h2>Formulário de contato</h2>
-  <form>
-    <label for="cidade">Cidade:</label>
-    <select id="cidade" name="cidade">
-      <option value="blumenau" selected>Blumenau</option>
-      <option value="florianopolis">Florianópolis</option>
-      <option value="joinville">Joinville</option>
-    </select>
-  </form>
-</section>
+            <h2>Metas futuras</h2>
+            <label>
+                <input type="checkbox"> Viajar para o exterior
+            </label><br>
+            <label>
+                <input type="checkbox"> Aprender um novo idioma
+            </label><br>
+            <label>
+                <input type="checkbox"> Publicar um livro
+            </label><br>
+            <label>
+                <input type="checkbox"> Trabalhar como desenvolvedor de sistemas
+            </label>
+        </section>
+        <section id="contato">
+            <h2>Formulário de contato</h2>
+            <form>
+                <label for="cidade">Cidade:</label>
+                <select id="cidade" name="cidade">
+                    <option value="blumenau" selected>Blumenau</option>
+                    <option value="florianopolis">Florianópolis</option>
+                    <option value="joinville">Joinville</option>
+                </select>
+            </form>
+        </section>
         <section id="social">
             <h2>Redes Sociais</h2>
             <a href="https://www.facebook.com/alexandrefabricio.guenther" target="_blank">
@@ -143,45 +151,72 @@
             <p>Be Yourself – Audioslave</p>
         </section>
         <section id="conquistas">
-            <h2>Minhas conquistas</h2>
-            <ul>
-                <li>Formação e técnico de Hardware.</li>
-                <li>Décimo lugar em um campenato Brasileiro de parapente.</li>
-                <li>Conclusão do curso de Adiministração de Empresa.</li>
-                Reconhecimento acadêmico
-                <ul>
-                    <li>Melhor projeto de programação</li>
-                    <li>Participação em palestras de Inteligência Artificial</li>
-                </ul>
-            </ul>
-
-        </section>
+  <h2>Minhas conquistas</h2>
+  
+  <div class="card">
+    <img src="hardware.jpg" alt="Formação em Hardware">
+    <p>Formação técnica em Hardware.</p>
+  </div>
+  
+  <div class="card">
+    <img src="parapente.jpg" alt="Campeonato de parapente">
+    <p>Décimo lugar em campeonato brasileiro de parapente.</p>
+  </div>
+  
+  <div class="card">
+    <img src="administracao.jpg" alt="Curso de Administração">
+    <p>Conclusão do curso de Administração de Empresa.</p>
+  </div>
+  
+ 
+  
+  
+</section>
 
         <section id="familia">
-            <h2>Família</h2>
-            <p>Minha família é meu <span class="alicerce">alicerce.</span> Creci em um ambiente acolhedor e cheio de
-                amor.</p>
-            <p>Meus <span class="tios">tios</span> estiveram mais presentes na minha infância.</p>
-            <p>Meus<span class="avos"> avós brincaram muito comigo na infância.</span></p>
-            <ul>
-                <li>Pais - Sempre presentes e incentivadores.</li>
-                <li>Esposa - Sempre presente nas horas que mais precisei.</li>
-                <li>Filhos - A Rasão da minha vida.</li>
-                <li>Neto - Uma nova fase na minha vida.</li>
-            </ul>
-
-        </section><!--familia-->
+            <h2>Minha família</h2>
+            <div class="membro">
+                <img src="pai.jpg" alt="Foto do Filho mais velho">
+                <h3>Rafael</h3>
+                <p>Filho</p>
+            </div>
+            <div class="membro">
+                <img src="mae.jpg" alt="Foto da esposa">
+                <h3>Alessandra</h3>
+                <p>Esposa</p>
+            </div>
+            <div class="membro">
+                <img src="irma.jpg" alt="Foto do filho mais novo">
+                <h3>Eduardo</h3>
+                <p>Filho</p>
+            </div>
+        </section>
 
         <section id="viagens">
             <h2>Viagens</h2>
             <p>Viajar é uma experiência que mais valorizo. Cada destino me trouxe novas culturas e conhecimentos.</p>
-            <ul>
-                <li>Rio de janeiro - Cidade maravilhosa onde passei alguns dias com minha esposa.</li>
-                <li>Natal RN - Onde tive o prazer de visitar com minha mulher e meus filhos.</li>
-                <li>Governador Valadares MG - Havai do voo livre. Melhor colacação em campeonatos e maior distâcia
-                    voada.</li>
-            </ul>
-        </section><!--viagens-->
+
+            <div class="card">
+                <img src="rio.jpg" alt="Rio de Janeiro">
+                <h3>Rio de Janeiro</h3>
+                <p>Cidade maravilhosa onde passei alguns dias com minha esposa.</p>
+                <button>Ver mais</button>
+            </div>
+
+            <div class="card">
+                <img src="natal.jpg" alt="Natal RN">
+                <h3>Natal RN</h3>
+                <p>Visitei com minha esposa e filhos, aproveitando as praias.</p>
+                <button>Ver mais</button>
+            </div>
+
+            <div class="card">
+                <img src="valadares.jpg" alt="Governador Valadares MG">
+                <h3>Governador Valadares MG</h3>
+                <p>Havaí do voo livre, onde conquistei melhores colocações.</p>
+                <button>Ver mais</button>
+            </div>
+        </section>
     </main>
     <footer>
         <p>&copy; 2026 Alexandre Fabricio Guenther - Todos os direitos reservados.</p>
